@@ -1,9 +1,16 @@
 /* GENERALI */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 ul {
   list-style-type: none;
 }
 p {
   padding: 15px 0;
+}
+a {
+  text-decoration: none;
+  display: block;
 }
 .container {
   padding: 25px 0;
@@ -59,12 +66,21 @@ header .text-jumbotron {
   text-align: center;
 }
 header .text-jumbotron h1 {
-  font-size: 3em;
+  font-size: 2.9em;
 }
 /* fine jumbotron*/
 
 /* MAIN */
-
+/* inizio product*/
+main #product [class*="col-"] {
+  background-color: #FAFAFA;
+  text-align: center;
+  padding: 20px 0;
+  border: 15px solid white;
+}
+main #product img {
+  width: 100%;
+}
 
 
 /* FOOTER */
@@ -79,6 +95,7 @@ header .text-jumbotron h1 {
   nav i.fas.fa-bars {
     display: block;
     line-height: 25px;
+    text-align: right;
   }
   header .text-jumbotron img {
     width: 120px;
@@ -86,6 +103,10 @@ header .text-jumbotron h1 {
 
   header .text-jumbotron h1 {
     font-size: 2em;
+  }
+
+  main #product img {
+    width: 400px;
   }
 }
 
@@ -98,5 +119,9 @@ and (max-width: 992px){
   nav i.fas.fa-bars {
     display: block;
     line-height: 25px;
+    text-align: right;
+  }
+  main #product img {
+    width: 500px;
   }
 }
