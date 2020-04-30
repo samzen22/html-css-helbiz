@@ -1,0 +1,102 @@
+/* GENERALI */
+ul {
+  list-style-type: none;
+}
+p {
+  padding: 15px 0;
+}
+.container {
+  padding: 25px 0;
+}
+.border-lr {
+  border-left: 1px solid black;
+  border-right: 1px solid black
+}
+
+/* HEADER*/
+/* navigation*/
+nav {
+  text-transform: uppercase;
+}
+
+nav ul {
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 13px;
+}
+nav .container {
+  padding: 25px 75px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav img {
+  width: 80px;
+}
+nav i.fas.fa-bars {
+  display: none;
+}
+/* fine navigation*/
+
+/* inizio jumbotron*/
+header .jumbotron {
+  background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 480px;
+  color: white;
+  position: relative;
+}
+header .text-jumbotron {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header .text-jumbotron h1 {
+  font-size: 3em;
+}
+/* fine jumbotron*/
+
+/* MAIN */
+
+
+
+/* FOOTER */
+
+
+/* MEDIA QUERY */
+/* mobile */
+@media all and (max-width: 768px){
+  nav ul {
+    display: none;
+  }
+  nav i.fas.fa-bars {
+    display: block;
+    line-height: 25px;
+  }
+  header .text-jumbotron img {
+    width: 120px;
+  }
+
+  header .text-jumbotron h1 {
+    font-size: 2em;
+  }
+}
+
+/* tablet */
+@media all and (min-width: 768px)
+and (max-width: 992px){
+  nav ul {
+    display: none;
+  }
+  nav i.fas.fa-bars {
+    display: block;
+    line-height: 25px;
+  }
+}
