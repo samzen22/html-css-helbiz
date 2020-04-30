@@ -19,6 +19,12 @@ a {
   border-left: 1px solid black;
   border-right: 1px solid black
 }
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
 
 /* HEADER*/
 /* navigation*/
@@ -81,6 +87,29 @@ main #product [class*="col-"] {
 main #product img {
   width: 100%;
 }
+/* fine product*/
+
+/* inizio work*/
+main #work .work-img {
+  background-image: url(../img/HelbizBanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+}
+main #work img {
+  height: 500px;
+  margin-top: -350px;
+}
+main #work [class*="col-"] {
+  margin-top: 70px;
+}
+main #work .container [class*="col-"]:first-child {
+  padding-left: 241px;
+}
+main #work .container [class*="col-"] p {
+  padding: 0;
+}
+/* fine work*/
 
 
 /* FOOTER */
@@ -88,7 +117,7 @@ main #product img {
 
 /* MEDIA QUERY */
 /* mobile */
-@media all and (max-width: 768px){
+@media all and (max-width: 767px){
   nav ul {
     display: none;
   }
@@ -108,11 +137,20 @@ main #product img {
   main #product img {
     width: 400px;
   }
+  main #work img {
+    display: none;
+  }
+  main #work .container [class*="col-"] {
+    text-align: center;
+  }
+  main #work .container [class*="col-"]:first-child {
+    padding-left: 0;
+  }
 }
 
 /* tablet */
 @media all and (min-width: 768px)
-and (max-width: 992px){
+and (max-width: 993px){
   nav ul {
     display: none;
   }
@@ -123,5 +161,11 @@ and (max-width: 992px){
   }
   main #product img {
     width: 500px;
+  }
+  main #work .container [class*="col-"] {
+    text-align: center;
+  }
+  main #work .container [class*="col-"]:first-child {
+    padding-left: 0;
   }
 }
