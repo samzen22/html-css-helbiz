@@ -143,6 +143,31 @@ main #smart .left {
   border-left: 8px solid white;
 }
 /* fine smart*/
+
+/* inizio family*/
+main #family .family-bottom-relative {
+  background-image: url(../img/Social-Banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 285px;
+  position: relative;
+}
+main #family .relative {
+
+}
+main #family .text-absolute {
+  color: black;
+  background-color: white;
+  padding: 25px 0;
+  width: 300px;
+  height: 130px;
+}
+main #family ul li {
+  display: inline-block;
+  font-size: 27px;
+  padding: 8px;
+}
+/* fine family*/
 /* FOOTER */
 
 
