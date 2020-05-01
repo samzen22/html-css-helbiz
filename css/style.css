@@ -25,6 +25,14 @@ a {
 .text-center {
   text-align: center;
 }
+.text-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
 
 /* HEADER*/
 /* navigation*/
@@ -61,17 +69,9 @@ header .jumbotron {
   background-size: cover;
   background-repeat: no-repeat;
   height: 480px;
-  color: white;
   position: relative;
 }
-header .text-jumbotron {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-header .text-jumbotron h1 {
+header .text-absolute h1 {
   font-size: 2.9em;
 }
 /* fine jumbotron*/
@@ -111,7 +111,38 @@ main #work .container [class*="col-"] p {
 }
 /* fine work*/
 
-
+/* inizio smart*/
+main #smart img {
+  width: 100%;
+}
+main #smart a {
+  color: white;
+}
+main #smart .relative {
+  position: relative;
+  margin-bottom: 25px;
+}
+main #smart .text-absolute.top {
+  left: 75%;
+}
+main #smart .text-absolute h2 {
+  font-size: 2.2em;
+}
+main #smart .text-absolute.bottom {
+  top: 110px;
+}
+main #smart .color-background {
+  background-color: #3B4E60;
+  border-right: 8px solid white;
+}
+main #smart .color-background img {
+  margin-top: 54%;
+  margin-bottom: -5px;
+}
+main #smart .left {
+  border-left: 8px solid white;
+}
+/* fine smart*/
 /* FOOTER */
 
 
@@ -133,10 +164,6 @@ main #work .container [class*="col-"] p {
   header .text-jumbotron h1 {
     font-size: 2em;
   }
-
-  main #product img {
-    width: 400px;
-  }
   main #work img {
     display: none;
   }
@@ -145,6 +172,13 @@ main #work .container [class*="col-"] p {
   }
   main #work .container [class*="col-"]:first-child {
     padding-left: 0;
+  }
+  main #smart .text-absolute.top {
+    left: 50%;
+  }
+  main #smart .color-background,
+  main #smart .left {
+    border: 0px;
   }
 }
 
@@ -159,13 +193,13 @@ and (max-width: 993px){
     line-height: 25px;
     text-align: right;
   }
-  main #product img {
-    width: 500px;
-  }
   main #work .container [class*="col-"] {
     text-align: center;
   }
   main #work .container [class*="col-"]:first-child {
     padding-left: 0;
+  }
+  main #smart .text-absolute.top {
+    left: 50%;
   }
 }
